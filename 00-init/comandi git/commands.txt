@@ -1,0 +1,30 @@
+Switched to a new branch 'features/classes/studente'
+PS C:\Users\bazzo\Desktop\Informatica\00init> git add .
+PS C:\Users\bazzo\Desktop\Informatica\00init> git commit -m "added student"
+[features/classes/studente f5a9a35] added student
+ 3 files changed, 58 deletions(-)
+ rename {screenshots => 00-init/screenshots}/git diff.png (100%)
+ rename {screenshots => 00-init/screenshots}/git status.png (100%)
+PS C:\Users\bazzo\Desktop\Informatica\00init> git checkout -b features/classes/school
+Switched to a new branch 'features/classes/school'
+PS C:\Users\bazzo\Desktop\Informatica\00init> git add .
+PS C:\Users\bazzo\Desktop\Informatica\00init> git commit -m "added school"
+[features/classes/school 64b67eb] added school
+ 1 file changed, 57 insertions(+)
+PS C:\Users\bazzo\Desktop\Informatica\00init> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\bazzo\Desktop\Informatica\00init> git merge features/classes/school
+Updating 50404de..64b67eb
+Fast-forward
+ 00-init/esercitazione_2_biblioteca.py |   5 +----
+ 00-init/esercitazione_3_scuola.py     |   1 -
+ 00-init/screenshots/git diff.png      | Bin 0 -> 13392 bytes
+ 00-init/screenshots/git status.png    | Bin 0 -> 16114 bytes
+ 4 files changed, 1 insertion(+), 5 deletions(-)
+ create mode 100644 00-init/screenshots/git diff.png
+ create mode 100644 00-init/screenshots/git status.png
+PS C:\Users\bazzo\Desktop\Informatica\00init> git merge features/classes/studente
+Already up to date.
+PS C:\Users\bazzo\Desktop\Informatica\00init> git add .
+PS C:\Users\bazzo\Desktop\Informatica\00init> git push 
