@@ -10,3 +10,31 @@ index 0d44d1e..e69de29 100644
 -
 -    def aggiungi(self, voto: float) -> None:
 :
+
+
+PS C:\Users\bazzo\Desktop\Informatica\00init> git diff --staged
+diff --git a/01-fondamenti/comandi.txt b/01-fondamenti/comandi.txt
+new file mode 100644
+index 0000000..7717b77
+--- /dev/null
++++ b/01-fondamenti/comandi.txt
+@@ -0,0 +1,12 @@
++S C:\Users\bazzo\Desktop\Informatica\00init> git diff
++diff --git a/01-fondamenti/registro-voti.py b/01-fondamenti/registro-voti.py
++index 0d44d1e..e69de29 100644
++--- a/01-fondamenti/registro-voti.py
+:
+
+
+PS C:\Users\bazzo\Desktop\Informatica\00init> git diff 
+diff --git a/01-fondamenti/comandi.txt b/01-fondamenti/comandi.txt
+index 7717b77..399e56d 100644
+--- a/01-fondamenti/comandi.txt
++++ b/01-fondamenti/comandi.txt
+@@ -9,4 +9,18 @@ index 0d44d1e..e69de29 100644
+ -        self.voti = []
+ -
+ -    def aggiungi(self, voto: float) -> None:
++:
++
+:
