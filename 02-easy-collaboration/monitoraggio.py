@@ -1,8 +1,7 @@
 
-"""
-
 SOGLIA_ORE = 1000
 
+# Elenco degli aeromobili della flotta
 aeromobili = [
     {"codice": "I-ABC", "modello": "A320", "ore_volo": 1240, "controlli_ok": True},
     {"codice": "I-DEF", "modello": "B737", "ore_volo": 860, "controlli_ok": False},
@@ -24,6 +23,7 @@ def stampa_riepilogo(aeromobili) -> None:
 
 def filtra_controlli_non_validi(aeromobili: list) -> list[dict]:
     """Restituisce gli aeromobili con controlli non validi."""
+    # ALTERNATIVA 1: LIST COMPREHENSION
     return [
         aeromobile
         for aeromobile in aeromobili
@@ -33,6 +33,7 @@ def filtra_controlli_non_validi(aeromobili: list) -> list[dict]:
 
 def filtra_oltre_soglia(aeromobili: list, soglia: int) -> list:
     """Restituisce gli aeromobili che superano la soglia di ore di volo."""
+    # ALTERNATIVA 1: LIST COMPREHENSION
     return [
         aeromobile
         for aeromobile in aeromobili
@@ -42,8 +43,11 @@ def filtra_oltre_soglia(aeromobili: list, soglia: int) -> list:
 
 
 def stampa_segnalazioni(titolo: str, segnalazioni: list) -> None:
-    """Stampa le segnalazioni."""
+    """Stampa le segnalazioni oppure un messaggio se non ce ne sono."""
     print(f"\n{titolo}:")
+    if not segnalazioni:
+        print("Nessuna segnalazione.")
+        return
     for aeromobile in segnalazioni:
         print(f"- {aeromobile['codice']} ({aeromobile['modello']})")
 
