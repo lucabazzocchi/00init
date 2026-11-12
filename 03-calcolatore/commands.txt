@@ -9,3 +9,19 @@ index 3a0bdff..14bf5d4 100644
 +class Somma(Operazione):
 +    def __init__(self, *valori) -> None:
 :
+
+
+S C:\Users\bazzo\Desktop\Informatica\00init> git log -n 1 --oneline
+>> git show HEAD
+6d7f524 (HEAD -> fixes/divisione-zero) fix: solleva ValueError nella divisione per zero (#2)
+commit 6d7f5246edabdeabde1bc0e10b588c1f70d5a327 (HEAD -> fixes/divisione-zero)
+Author: ilMastroDeiBug <bazzo.tech.guides@gmail.com>
+Date:   Fri Nov 13 00:13:57 2026 +0100
+
+    fix: solleva ValueError nella divisione per zero (#2)
+
+diff --git a/03-calcolatore/calcolatore.py b/03-calcolatore/calcolatore.py
+index 14bf5d4..8ba8eee 100644
+--- a/03-calcolatore/calcolatore.py
++++ b/03-calcolatore/calcolatore.py
+:
