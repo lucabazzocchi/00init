@@ -1,0 +1,12 @@
+S C:\Users\bazzo\Desktop\Informatica\00init> git diff
+diff --git a/01-fondamenti/registro-voti.py b/01-fondamenti/registro-voti.py
+index 0d44d1e..e69de29 100644
+--- a/01-fondamenti/registro-voti.py
++++ b/01-fondamenti/registro-voti.py
+@@ -1,23 +0,0 @@
+-class RegistroVoti:
+-    def __init__(self) -> None:
+-        self.voti = []
+-
+-    def aggiungi(self, voto: float) -> None:
+:
