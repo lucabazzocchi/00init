@@ -1,0 +1,11 @@
+diff --git a/03-calcolatore/calcolatore.py b/03-calcolatore/calcolatore.py
+index 3a0bdff..14bf5d4 100644
+--- a/03-calcolatore/calcolatore.py
++++ b/03-calcolatore/calcolatore.py
+@@ -16,6 +16,14 @@ class Operazione:
+         return f"{self.nome}: {self.valori}"
+ 
+ 
++class Somma(Operazione):
++    def __init__(self, *valori) -> None:
+:
