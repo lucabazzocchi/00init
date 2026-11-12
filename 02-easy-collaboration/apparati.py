@@ -22,9 +22,20 @@ def aggiungi_apparato(codice: str, nome: str, bus: str, stato: str) -> bool:
 
 
 def aggiorna_stato(codice: str, stato: str) -> bool:
-    # Versione iniziale: non normalizza le minuscole (verrà corretta nel fix)
-    if codice not in APPARATI or stato not in STATI_AMMESSI:
+    stato_normalizzato = stato.upper()
+    
+    if codice not in APPARATI or stato_normalizzato not in STATI_AMMESSI:
         return False
         
-    APPARATI[codice]["stato"] = stato
+    APPARATI[codice]["stato"] = stato_normalizzato
     return True
+
+
+if __name__ == "__main__":
+    # Prova del fix: stato minuscolo valido e stato sconosciuto rifiutato
+    assert aggiorna_stato("NAV-01", "attenzione") is True
+    assert APPARATI["NAV-01"]["stato"] == "ATTENZIONE"
+    assert aggiorna_stato("NAV-01", " guasto ") is False
+    assert APPARATI["NAV-01"]["stato"] == "ATTENZIONE"
+    aggiorna_stato("NAV-01", "OK")  # Ripristina stato iniziale
+    print("Test fix stato-non-valido superati.")
