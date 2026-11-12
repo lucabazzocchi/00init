@@ -42,3 +42,28 @@ Changes to be committed:
 
 Saved working directory and index state On features/report-stato: WIP report-stato
 PS C:\Users\bazzo\Desktop\Informatica\00init> 
+
+
+git log --graph --oneline --all
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Merge made by the 'ort' strategy.
+ 02-easy-collaboration/main.py      | 28 ++++++++++++++++++++++++++++
+ 02-easy-collaboration/riepilogo.py | 15 +++++++++++++++
+ 2 files changed, 43 insertions(+)
+ create mode 100644 02-easy-collaboration/main.py
+ create mode 100644 02-easy-collaboration/riepilogo.py
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 240 bytes | 240.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/lucabazzocchi/00init.git
+   1d35a57..3a6da40  main -> main
+*   3a6da40 (HEAD -> main, origin/main, origin/HEAD) merge: integra features/riepilogo
+|\  
+| * cbc41cd (origin/features/riepilogo, features/riepilogo) feat: aggiunge riepilogo stati e punto di ingresso main
+|/  
+*   1d35a57 merge: integra features/report-stato
+|\  
+| * 6a50833 (origin/features/report-stato, features/report-stato) feat: implementa filtri per stato e perbus
+|/  
