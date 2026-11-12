@@ -25,3 +25,14 @@ index 14bf5d4..8ba8eee 100644
 --- a/03-calcolatore/calcolatore.py
 +++ b/03-calcolatore/calcolatore.py
 :
+
+*   8ab385c (origin/main, origin/HEAD) Merge pull request #6 from lucabazzocchi/fixes/divisione-zero
+|\  
+| * 40d300a (HEAD -> fixes/divisione-zero, origin/fixes/divisione-zero) added commands
+| * 6d7f524 fix: solleva ValueError nella divisione per zero (#2)
+|/  
+*   ed5f347 (main) Merge pull request #4 from lucabazzocchi/features/somma
+|\  
+| * c875ca1 (origin/features/somma, features/somma) feat: implementa classe Somma (#1)
+| * b638bc2 chore: struttura base calcolatore senza somma
+|/  
