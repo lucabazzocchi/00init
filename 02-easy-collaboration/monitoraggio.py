@@ -1,8 +1,16 @@
-
 SOGLIA_ORE = 1000
 
-# Elenco degli aeromobili della flotta (2 dizionari iniziali)
+# Elenco degli aeromobili della flotta
 aeromobili = [
     {"codice": "I-ABC", "modello": "A320", "ore_volo": 1240, "controlli_ok": True},
     {"codice": "I-DEF", "modello": "B737", "ore_volo": 860, "controlli_ok": False},
 ]
+
+
+def filtra_controlli_non_validi(aeromobili: list) -> list[dict]:
+    """Restituisce gli aeromobili con controlli non validi."""
+    return [
+        aeromobile
+        for aeromobile in aeromobili
+        if aeromobile["controlli_ok"] is False
+    ]
