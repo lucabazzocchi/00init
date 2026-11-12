@@ -16,6 +16,14 @@ class Operazione:
         return f"{self.nome}: {self.valori}"
 
 
+class Somma(Operazione):
+    def __init__(self, *valori) -> None:
+        super().__init__("somma", *valori)
+
+    def esegui(self):
+        return sum(self.valori)
+
+
 class Sottrazione(Operazione):
     def __init__(self, primo, secondo) -> None:
         super().__init__("sottrazione", primo, secondo)
@@ -29,7 +37,6 @@ class Divisione(Operazione):
         super().__init__("divisione", dividendo, divisore)
 
     def esegui(self) -> float:
-        # Versione iniziale: priva di controllo divisione per zero (verrà risolto nella Issue #2)
         return self.valori[0] / self.valori[1]
 
 
@@ -75,10 +82,12 @@ class Calcolatore:
 if __name__ == "__main__":
     calcolatore = Calcolatore()
 
+    risultato_somma = calcolatore.esegui(Somma(2, 3, 5))
     risultato_sottrazione = calcolatore.esegui(Sottrazione(15, 7))
     risultato_divisione = calcolatore.esegui(Divisione(20, 4))
     risultato_moltiplicazione = calcolatore.esegui(Moltiplicazione(3, 4, 5))
 
+    print("2 + 3 + 5 =", risultato_somma)
     print("15 - 7 =", risultato_sottrazione)
     print("20 / 4 =", risultato_divisione)
     print("3 * 4 * 5 =", risultato_moltiplicazione)
