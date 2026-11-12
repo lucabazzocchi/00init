@@ -41,34 +41,25 @@ index 7717b77..399e56d 100644
 
 
 
-PS C:\Users\bazzo\Desktop\Informatica\00init> git diff 
-diff --git a/01-fondamenti/comandi.txt b/01-fondamenti/comandi.txt
-index 7717b77..399e56d 100644
---- a/01-fondamenti/comandi.txt
-+++ b/01-fondamenti/comandi.txt
-@@ -9,4 +9,18 @@ index 0d44d1e..e69de29 100644
- -        self.voti = []
- -
- -    def aggiungi(self, voto: float) -> None:
-+:
-+
-PS C:\Users\bazzo\Desktop\Informatica\00init> git add .
+PPS C:\Users\bazzo\Desktop\Informatica\00init> git add .
 PS C:\Users\bazzo\Desktop\Informatica\00init> git commit -m "feat: calcola media dei voti"
-[main 2bf3b34] feat: calcola media dei voti
- 2 files changed, 55 insertions(+)
+[main af33220] feat: calcola media dei voti
+ 1 file changed, 53 insertions(+), 1 deletion(-)
 PS C:\Users\bazzo\Desktop\Informatica\00init> git log
-commit 2bf3b349492dfbce2a5635ac2253c68c5fc2e09d (HEAD -> main)
+>> git log --graph --oneline
+>> git show HEAD
+commit af3322046e6128ecc24c282c5d2da471b7bba12f (HEAD -> main)
 Author: ilMastroDeiBug <bazzo.tech.guides@gmail.com>
-Date:   Thu Nov 12 23:26:01 2026 +0100
+Date:   Thu Nov 12 23:27:38 2026 +0100
 
     feat: calcola media dei voti
 
-commit a5e3d1b852325250c4df30ce6f83bb008d9029ab
+commit 2bf3b349492dfbce2a5635ac2253c68c5fc2e09d
 Author: ilMastroDeiBug <bazzo.tech.guides@gmail.com>
-Date:   Thu Nov 12 23:24:42 2026 +0100
+Date:   Thu Nov 12 23:26:01 2026 +0100
 
-PS C:\Users\bazzo\Desktop\Informatica\00init> git log --graph --oneline
-* 2bf3b34 (HEAD -> main) feat: calcola media dei voti
+* af33220 (HEAD -> main) feat: calcola media dei voti
+* 2bf3b34 feat: calcola media dei voti
 * a5e3d1b feat: crea registro voti
 * f40e7bd Merge branch 'main' of https://github.com/lucabazzocchi/00init
 *   e07f377 (origin/main, origin/HEAD) Merge branch 'main' of https://github.com/lucabazzocchi/00init
@@ -77,16 +68,14 @@ PS C:\Users\bazzo\Desktop\Informatica\00init> git log --graph --oneline
 | |\  
 | * \   913c9f3 Merge pull request #2 from lucabazzocchi/features/classes/libro
 | |\ \  
-* | | | 64b67eb (features/classes/school) added school
-PS C:\Users\bazzo\Desktop\Informatica\00init> git show HEAD
-commit 2bf3b349492dfbce2a5635ac2253c68c5fc2e09d (HEAD -> main)
+commit af3322046e6128ecc24c282c5d2da471b7bba12f (HEAD -> main)
 Author: ilMastroDeiBug <bazzo.tech.guides@gmail.com>
-Date:   Thu Nov 12 23:26:01 2026 +0100
+Date:   Thu Nov 12 23:27:38 2026 +0100
 
     feat: calcola media dei voti
 
 diff --git a/01-fondamenti/comandi.txt b/01-fondamenti/comandi.txt
-index 7717b77..5d5240b 100644
+index 5d5240b..7021258 100644
 --- a/01-fondamenti/comandi.txt
 +++ b/01-fondamenti/comandi.txt
 PS C:\Users\bazzo\Desktop\Informatica\00init> 
