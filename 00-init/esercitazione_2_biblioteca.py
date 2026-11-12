@@ -52,3 +52,10 @@ class Biblioteca:
 
     def __len__(self):
         return self.conta_libri()
+class Prestito:
+    def __init__(self, libro, utente):
+        self.libro = libro
+        self.utente = utente
+
+    def __str__(self):
+        return f"{self.utente} ha preso in prestito: {self.libro.titolo}"
