@@ -1,0 +1,44 @@
+PS C:\Users\bazzo\Desktop\Informatica\00init> git add .
+PS C:\Users\bazzo\Desktop\Informatica\00init> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   02-easy-collaboration/apparati.py
+
+PS C:\Users\bazzo\Desktop\Informatica\00init> git diff
+PS C:\Users\bazzo\Desktop\Informatica\00init> git commit -m "feat: aggiunge il registro degli apparati"
+[main 4732cae] feat: aggiunge il registro degli apparati
+ 1 file changed, 30 insertions(+)
+ create mode 100644 02-easy-collaboration/apparati.py
+PS C:\Users\bazzo\Desktop\Informatica\00init> git push -u origin features/registro-apparati
+branch 'features/registro-apparati' set up to track 'origin/features/registro-apparati'.
+Everything up-to-date
+PS C:\Users\bazzo\Desktop\Informatica\00init> git checkout main
+>> git merge --no-ff features/registro-apparati -m "merge: integra features/registro-apparati"
+>> git push origin main
+Already on 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+Already up to date.
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 846 bytes | 846.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lucabazzocchi/00init.git
+   10339ec..4732cae  main -> main
+PS C:\Users\bazzo\Desktop\Informatica\00init> 
+
+S C:\Users\bazzo\Desktop\Informatica\00init> git status
+>> git stash push -u -m "WIP report-stato"
+On branch features/report-stato
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   02-easy-collaboration/report.py
+
+Saved working directory and index state On features/report-stato: WIP report-stato
+PS C:\Users\bazzo\Desktop\Informatica\00init> 
