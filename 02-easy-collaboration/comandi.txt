@@ -67,3 +67,18 @@ To https://github.com/lucabazzocchi/00init.git
 |\  
 | * 6a50833 (origin/features/report-stato, features/report-stato) feat: implementa filtri per stato e perbus
 |/  
+
+
+* e9d84b0 (origin/features/segnalazioni, features/segnalazioni) feat: segnala il superamento della sogliaore
+* 3e77f77 feat: filtra i controlli non validi
+| * a7f06fb (origin/features/dati-flotta, features/dati-flotta) feat: stampa il riepilogo degli aeromobili
+| * 6710b47 feat: aggiunge i dati della flotta
+|/  
+* 57b8062 (HEAD -> main, origin/main, origin/HEAD) chore: prepara monitoraggio flotta
+*   3a6da40 merge: integra features/riepilogo
+|\  
+| * cbc41cd (origin/features/riepilogo, features/riepilogo) feat: aggiunge riepilogo stati e punto di ingr
+Updating 57b8062..a7f06fb
+Fast-forward
+ 02-easy-collaboration/monitoraggio.py | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
